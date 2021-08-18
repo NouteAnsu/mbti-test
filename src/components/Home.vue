@@ -1,6 +1,5 @@
 <template>
     <v-container fluid>
-        <Header/>
         <v-layout>
             <v-flex>
                 <v-flex>
@@ -18,13 +17,9 @@
 </template>
 
 <script>
-import Header from '@/components/Header'
 import questionArr from '../data/question'
 import answerArr from '../data/answer'
 export default {
-    components:{
-        Header
-    },
     data() {
         return { 
             //질문
