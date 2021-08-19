@@ -3,7 +3,10 @@
         <v-layout justify-center align-center class="result_layout">
             <v-flex xs10 class="result_flex">
                 <v-flex>
-                    <v-flex class="mbti_type mb-15">{{type}} ( {{name}} )</v-flex>
+                    <v-flex class="mbti_type mb-15">
+                        <v-flex>{{type}}</v-flex>
+                        <v-flex>( {{name}} )</v-flex>
+                    </v-flex>
                     <v-flex class="mbti_location mb-10">해외: {{location1}}  /  국내: {{location2}}</v-flex>
                     <v-flex class="mb-10">
                         <v-flex class="mbti_content1">{{content1}},</v-flex>

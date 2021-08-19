@@ -48,3 +48,18 @@
     transition: 800ms ease all;
 }
 
+@media(max-width:960px){
+    .mbti_answer{
+        font-size: 20px;
+    }
+}
+@media(max-width:600px){
+    .mbti_answer{
+        font-size: 18px;
+    }
+}
+@media(max-width:400px){
+    .mbti_answer{
+        font-size: 16px;
+    }
+}

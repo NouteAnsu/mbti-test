@@ -1,7 +1,7 @@
 <template>
     <v-container fluid class="splash">
         <v-layout align-center justify-center class="splash_layout">
-            <v-flex xs12 sm10 class="splash_flex">
+            <v-flex xs11 sm10 class="splash_flex">
                 <v-progress-linear
                     indeterminate
                     color="green"
