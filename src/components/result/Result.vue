@@ -65,7 +65,6 @@ export default {
             this.content2=content[1]
         },
         sendKaKao: function (){
-            console.log(config.kakao_key)
             Kakao.init(config.kakao_key);
             Kakao.Link.sendDefault({
                 objectType: 'feed',
@@ -74,9 +73,18 @@ export default {
                     description: 'MBTI 유형 검사',
                     imageUrl: '',
                     link: {
-                        mobileWebUrl: 'http://localhost:8080',
-                        webUrl:'http://localhost:8080'
+                        mobileWebUrl: document.location.href,
+                        webUrl:document.location.href
                     },
+                    // buttons: [
+                    //     {
+                    //         title: 'Open',
+                    //         link: {
+                    //             mobileWebUrl : document.location.href,
+                    //             webUrl: document.location.href
+                    //         }
+                    //     }
+                    // ]
                 }
             })
         }
