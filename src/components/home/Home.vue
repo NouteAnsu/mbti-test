@@ -11,8 +11,8 @@
                         <v-stepper-step color="#1AAB8A" step="4"></v-stepper-step>
                     </v-stepper-header>
                 </v-stepper>
-                <v-flex class="mbti_answer mb-5 py-2" @click="nextHandler(1)">{{answer1}}</v-flex>
-                <v-flex class="mbti_answer py-2" @click="nextHandler(-1)">{{answer2}}</v-flex>
+                <v-flex class="mbti_answer mb-5 py-3" @click="nextHandler(1)">{{answer1}}</v-flex>
+                <v-flex class="mbti_answer py-3" @click="nextHandler(-1)">{{answer2}}</v-flex>
             </v-flex>
         </v-layout>
     </v-container>
