@@ -1,7 +1,7 @@
 <template>
     <v-container fluid class="result">
         <v-layout justify-center align-center class="result_layout">
-            <v-flex xs10 class="result_flex">
+            <v-flex xs11 class="result_flex">
                 <v-flex>
                     <v-flex class="mbti_type mb-15">
                         <v-flex>{{type}}</v-flex>
