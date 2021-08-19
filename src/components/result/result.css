@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+.result{
+    height: 100%;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.result_layout{
+    height: 100%;
+}
+.result_flex{
+    text-align: center;
+}
+.mbti_type{
+    font-size: 50px;
+}
+.mbti_location{
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.mbti_content1{
+    font-size:30px;
+    font-weight: 600;
+}
+.mbti_content2{
+    font-size:20px
+}
+.mbti_share{
+    cursor: pointer;
+    font-size: 20px;
+}

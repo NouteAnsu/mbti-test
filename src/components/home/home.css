@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
+.home{
+    height: 100%;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home_layout{
+    height: 100%;
+}
+.home_flex{
+    text-align: center;
+}
+
+.mbti_question{
+    font-size: 30px;
+}
+.mbti_answer{
+    font-size:25px;
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+.mbti_answer:hover{
+    background: #fff;
+    color: #1AAB8A;
+}
+.mbti_answer::before,.mbti_answer::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+.mbti_answer::after{
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+.mbti_answer:hover::before,.mbti_answer:hover::after{
+    width: 100%;
+    transition: 800ms ease all;
+}
+

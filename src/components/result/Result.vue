@@ -1,22 +1,22 @@
 <template>
-    <v-container fluid class="container">
-        <v-layout justify-center>
-            <v-flex xs10 class="text-align">
+    <v-container fluid class="result">
+        <v-layout justify-center align-center class="result_layout">
+            <v-flex xs10 class="result_flex">
                 <v-flex>
-                    <v-flex>{{type}}({{name}})</v-flex>
-                    <v-layout>
-                        <v-flex>해외:{{location1}}</v-flex>
-                        <v-flex>국내:{{location2}}</v-flex>
-                    </v-layout>
-                    <v-flex>{{content}}</v-flex>
+                    <v-flex class="mbti_type mb-15">{{type}} ( {{name}} )</v-flex>
+                    <v-flex class="mbti_location mb-10">해외: {{location1}}  /  국내: {{location2}}</v-flex>
+                    <v-flex class="mb-10">
+                        <v-flex class="mbti_content1">{{content1}},</v-flex>
+                        <v-flex class="mbti_content2">{{content2}}</v-flex>
+                    </v-flex>
                 </v-flex>
                 <!-- <v-flex v-else>
                     <v-flex>???</v-flex>
                     <v-flex>결과를 알고싶다면</v-flex>
                 </v-flex> -->
-                <v-layout>
-                    <v-flex>카카오톡 공유하기</v-flex>
-                </v-layout>
+                <v-flex>
+                    <img class="mbti_share" src="./kakao.png" width="300" height="70">
+                </v-flex>
             </v-flex>
         </v-layout>
     </v-container>
@@ -24,7 +24,7 @@
 
 
 <script>
-import resultArr from '../data/result'
+import resultArr from '../../data/result'
 export default {
     data() {
         return {
@@ -34,7 +34,8 @@ export default {
             name:'',
             location1:'',
             location2:'',
-            content:'',
+            content1:'',
+            content2:'',
 
             open:false,
         }
@@ -54,7 +55,9 @@ export default {
             var location=data.location.split('/')
             this.location1=location[0]
             this.location2=location[1]
-            this.content=data.content
+            var content=data.content.split(',')
+            this.content1=content[0]
+            this.content2=content[1]
         },
         shareSocail(){
 
@@ -64,5 +67,5 @@ export default {
 </script>
 
 <style>
-    @import '../assets/css/style.css'
+    @import './result.css'
 </style>
