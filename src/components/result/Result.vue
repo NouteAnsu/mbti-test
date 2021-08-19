@@ -15,7 +15,7 @@
                     <v-flex>결과를 알고싶다면</v-flex>
                 </v-flex> -->
                 <v-flex>
-                    <img class="mbti_share" src="./kakao.png" width="300" height="70">
+                    <img class="mbti_share" src="./kakao.png" width="300" height="70" @click="sendKaKao">
                 </v-flex>
             </v-flex>
         </v-layout>
@@ -23,8 +23,10 @@
 </template>
 
 
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script>
 import resultArr from '../../data/result'
+import config from '../../config'
 export default {
     data() {
         return {
@@ -59,8 +61,21 @@ export default {
             this.content1=content[0]
             this.content2=content[1]
         },
-        shareSocail(){
-
+        sendKaKao: function (){
+            console.log(config.kakao_key)
+            Kakao.init(config.kakao_key);
+            Kakao.Link.sendDefault({
+                objectType: 'feed',
+                content: {
+                    title: 'MBTI유형 검사',
+                    description: 'MBTI 유형 검사',
+                    imageUrl: '',
+                    link: {
+                        mobileWebUrl: 'http://localhost:8080',
+                        webUrl:'http://localhost:8080'
+                    },
+                }
+            })
         }
     }
 }
