@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Home from './components/home/Home'
 import Result from './components/result/Result'
 import Splash from './components/splash/Splash'
+import Intro from './components/intro/Intro'
 
 Vue.use(Router)
 
@@ -12,7 +13,12 @@ export default new Router({
     routes: [
         {
             path:'/',
-            name:'Home',
+            name:'Intro',
+            component:Intro
+        },
+        {
+            path:'/home',
+            name:'/Home',
             component:Home
         },
         {
