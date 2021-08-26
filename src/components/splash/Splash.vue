@@ -24,7 +24,7 @@ export default {
     created() {
         setInterval(() =>{
             this.$router.push({
-                path:'/result'
+                path:'/mbti/result'
             })
         },3000)
     },

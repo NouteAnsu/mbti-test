@@ -33,7 +33,7 @@ export default {
     methods:{
         moveHome(){
             this.$router.push({
-                path:'/home'
+                path:'/mbti/home'
             })
         }
     }

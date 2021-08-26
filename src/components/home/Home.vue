@@ -76,7 +76,7 @@ export default {
                 this.result=this.result.join('')
                 localStorage.setItem('result',this.result)
                 this.$router.push({
-                    path:'/splash',
+                    path:'/mbti/splash',
                 })
             }
             this.QnA()
