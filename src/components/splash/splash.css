@@ -1,13 +1,15 @@
 .splash{
     height: 100%;
     padding: 0;
-    background-color: azure;
+    overflow: hidden;
+}
+.splash_flex{
+    text-align: center;
 }
 .splash_layout{
     height: 100%;
 }
 .splash_text{
-    font-size: 25px;
-    text-align: center;
     font-weight: bold;
+    font-size: 20px;
 }

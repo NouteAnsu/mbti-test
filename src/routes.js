@@ -18,22 +18,22 @@ export default new Router({
         //     component:Err
         // },
         {
-            path:'/mbti',
+            path:'/',
             name:'Intro',
             component:Intro
         },
         {
-            path:'/mbti/home',
+            path:'/home',
             name:'Home',
             component:Home
         },
         {
-            path:'/mbti/result',
+            path:'/result',
             name:'Result',
             component:Result
         },
         {
-            path:'/mbti/splash',
+            path:'/splash',
             name:'Spalsh',
             component:Splash
         }

@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
 .intro{
     height: 100%;
-    font-family: 'Ubuntu', sans-serif;
+    background:#A6E0F2;
+    overflow: hidden;
 }
 .intro_layout{
     height: 100%;
@@ -14,43 +14,19 @@
     opacity: 1;
     transition: 1000ms ease all;
 }
-.intro_desc{
-    font-size: 30px;
-}
-.start{
+.start_btn{
     font-size: 40px;
     letter-spacing: 2px;
     cursor: pointer;
-    display: inline-block;
+    color: #ff385c;
+    background: #fff;
+    font-weight: 600;
 }
-.start:hover > span:nth-child(1){
-    color: red;
-    transition: 800ms ease all;
+.start_btn:hover{
+    color: #fff;
+    background:#ff385c;
 }
-.start:hover > span:nth-child(2){
-    color: orange;
-    transition: 900ms ease all;
-}
-.start:hover > span:nth-child(3){
-    color: yellow;
-    transition: 1000ms ease all;
-}
-.start:hover> span:nth-child(4){
-    color: green;
-    transition: 1100ms ease all;
-}
-.start:hover > span:nth-child(5){
-    color: blue;
-    transition: 1200ms ease all;
-}
-.start:hover > span:nth-child(6){
-    color: navy;
-    transition: 1300ms ease all;
-}
-.start:hover > span:nth-child(7){
-    color: purple;
-    transition: 1400ms ease all;
-}
+
 @media(max-width:600px){
     .intro_desc{
         font-size: 25px;

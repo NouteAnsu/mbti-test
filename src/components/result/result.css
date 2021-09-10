@@ -12,32 +12,37 @@
 }
 .mbti_type{
     font-size: 50px;
+    text-align: left;
 }
 .mbti_location{
     letter-spacing: 2px;
     font-size: 20px;
 }
-.mbti_content1{
-    font-size:30px;
-    font-weight: 600;
-}
 .mbti_content2{
-    font-size:20px
+    font-size:20px;
+    font-weight: 500;
 }
 .mbti_share{
     cursor: pointer;
     font-size: 20px;
 }
+.chemi{
+    color: #fff;
+    background: #ff385c;
+}
+.result_text{
+    font-size:30px;font-weight:500
+}
 
 
-@media(max-width:420px){
+@media(max-width:450px){
     .mbti_type{
-        font-size: 40px;
-    }
-    .mbti_content1{
-        font-size:25px;
+        font-size:40px;
     }
     .mbti_content2{
-        font-size:18px
+        font-size:17px
+    }
+    .result_text{
+        font-size: 20px;
     }
 }

@@ -1,18 +1,19 @@
 <template>
     <v-container fluid class="home">
-        <v-layout align-center justify-center class="home_layout">
-            <v-flex md8 lg6 class="home_flex">
-                <v-flex class="mbti_question mb-10">{{question}}</v-flex>
-                <v-stepper v-model="el" class="mb-10" flat>
-                    <v-stepper-header>
-                        <v-stepper-step color="#1AAB8A" :complete="el > 1" step="1"></v-stepper-step>
-                        <v-stepper-step color="#1AAB8A" :complete="el > 2" step="2"></v-stepper-step>
-                        <v-stepper-step color="#1AAB8A" :complete="el > 3" step="3"></v-stepper-step>
-                        <v-stepper-step color="#1AAB8A" step="4"></v-stepper-step>
-                    </v-stepper-header>
-                </v-stepper>
-                <v-flex class="mbti_answer mb-5 py-3" @click="nextHandler(1)">{{answer1}}</v-flex>
-                <v-flex class="mbti_answer py-3" @click="nextHandler(-1)">{{answer2}}</v-flex>
+        <v-layout justify-center class="home_layout">
+            <v-flex xs12 sm10 md8 lg6>
+                <v-flex style="height:50px"></v-flex>
+                <v-flex>
+                    <v-progress-linear color="#ff385c" v-model="rate" :value="question.length"></v-progress-linear>
+                </v-flex>
+                <v-layout align-center style="height:100%">
+                    <v-flex class="home_flex mx-7 mb-10">
+                        <v-flex class="order">Q{{q}}</v-flex>
+                        <v-flex class="mbti_question my-8">{{question}}</v-flex>
+                        <v-flex class="mbti_answer mb-5 pa-3" @click="nextHandler(1)">{{answer1}}</v-flex>
+                        <v-flex class="mbti_answer pa-3" @click="nextHandler(-1)">{{answer2}}</v-flex>
+                    </v-flex>
+                </v-layout>
             </v-flex>
         </v-layout>
     </v-container>
@@ -26,7 +27,8 @@ export default {
         return {
             //step
             el:1,
-
+            q:1,
+            rate:0,
             //질문
             questionStep:0,
             question:'',
@@ -59,26 +61,25 @@ export default {
                 if(this.cnt>0) this.result[0]='E'
                 else this.result[0]='I'
                 this.cnt=0
-                this.el=2
             }else if(this.questionStep===6){
                 if(this.cnt>0) this.result[1]='S'
                 else this.result[1]='N'
                 this.cnt=0
-                this.el=3
             }else if(this.questionStep===9){
                 if(this.cnt>0) this.result[2]='T'
                 else this.result[2]='F'
                 this.cnt=0
-                this.el=4
             }else if(this.questionStep===12){
                 if(this.cnt>0) this.result[3]='J'
                 else this.result[3]='P'
                 this.result=this.result.join('')
                 localStorage.setItem('result',this.result)
                 this.$router.push({
-                    path:'/mbti/splash',
+                    path:'/splash',
                 })
             }
+            this.q++
+            this.rate+=8.33
             this.QnA()
         }
     }

@@ -1,24 +1,38 @@
 <template>
     <v-container fluid class="result">
         <v-layout justify-center align-center class="result_layout">
-            <v-flex xs11 sm10 md7 lg6 class="result_flex">
-                <v-flex>
-                    <v-flex class="mbti_type mb-15">
-                        <v-flex>{{type}}</v-flex>
-                        <v-flex>( {{name}} )</v-flex>
+            <v-flex xs11 sm8 md5 lg4 class="result_flex mx-8">
+                <v-flex class="mb-10" style="text-align:center">
+                    <img class="mt-5 hidden-sm-and-down" src="../splash/splash_icon.png" width="300" height="80">
+                    <img class="mt-5 hidden-md-and-up" src="../splash/splash_icon.png" width="170" height="40">
+                </v-flex>
+                <v-flex class="mb-15">
+                    <!-- <v-flex class="mbti_type mb-10">
+                        <v-flex style="max-height:400px">
+                            <img src="" width="100%" height="100%">
+                        </v-flex>
+                    </v-flex> -->
+                    <v-flex class="mbti_type">{{type}}</v-flex>
+                    <v-flex class="my-5" style="text-align:left">
+                        <v-flex class="mbti_content2 mb-2" v-for="(text,index) in content" :key="index">{{text}}</v-flex>
                     </v-flex>
-                    <v-flex class="mbti_location mb-10">해외: {{location1}}  /  국내: {{location2}}</v-flex>
-                    <v-flex class="mb-10">
-                        <v-flex class="mbti_content1">{{content1}},</v-flex>
-                        <v-flex class="mbti_content2">{{content2}}</v-flex>
+                    <v-flex style="text-align:left;font-size:20px">
+                        <v-flex class="mb-3">환상 <span class="chemi pa-1">{{best}}</span></v-flex>
+                        <v-flex>환장 <span class="chemi pa-1">{{worst}}</span></v-flex>
                     </v-flex>
                 </v-flex>
-                <!-- <v-flex v-else>
-                    <v-flex>???</v-flex>
-                    <v-flex>결과를 알고싶다면</v-flex>
-                </v-flex> -->
-                <v-flex>
-                    <img class="mbti_share" src="./kakao.png" width="300" height="70" @click="sendKaKao">
+                <v-flex class="result_info">
+                    <v-flex class="result_text">그런 당신에게 추천하는 위버딩 서식!</v-flex>
+                    <v-flex class="mb-10 hidden-sm-and-down" style="height:450px">
+                        <img :src="resultImg" width="100%" height="100%">
+                    </v-flex>
+                    <v-flex class="mb-10 hidden-md-and-up" style="height:350px">
+                        <img :src="resultImg" width="100%" height="100%">
+                    </v-flex>
+                    <v-flex class="mb-10">
+                        <v-flex class="mb-3 py-3" style="background:#ff385c;font-weight:bold;font-size:18px;cursor:pointer;color:#fff">지금 만나러 가기</v-flex>
+                        <v-flex class="py-3" style="background:#fef01b;font-weight:bold;font-size:18px;cursor:pointer" @click="sendKaKao">카카오톡 공유하기</v-flex>
+                    </v-flex>
                 </v-flex>
             </v-flex>
         </v-layout>
@@ -36,13 +50,14 @@ export default {
             result:'',
 
             type:'',
-            name:'',
-            location1:'',
-            location2:'',
-            content1:'',
-            content2:'',
+            content:[],
+            resultImg:'',
 
-            open:false,
+            best:'',
+            worst:'',
+
+            share_url:'https://webudding.net'
+
         }
     },
     created() {
@@ -56,42 +71,46 @@ export default {
                 if(o.type===this.result) data = o
             })
             this.type=data.type
-            this.name=data.name
-            var location=data.location.split('/')
-            this.location1=location[0]
-            this.location2=location[1]
-            var content=data.content.split(',')
-            this.content1=content[0]
-            this.content2=content[1]
+            this.content=data.content.split(',')
+            this.resultImg=data.resultImg
+            this.best=data.best
+            this.worst=data.worst
         },
         sendKaKao: function (){
-            Kakao.init(config.kakao_key);
-            Kakao.Link.sendDefault({
-                objectType: 'feed',
-                content: {
-                    title: 'MBTI유형 검사',
-                    description: 'MBTI 유형 검사',
-                    imageUrl: '',
-                    link: {
-                        mobileWebUrl: document.location.href,
-                        webUrl:document.location.href
+            if (!Kakao.isInitialized()) {
+                Kakao.init(config.kakao_key);
+                Kakao.Link.sendDefault({
+                    objectType: 'feed',
+                    content: {
+                        title: 'MBTI유형 검사',
+                        description: 'MBTI 유형 검사',
+                        imageUrl:'https://www.webudding.net/intro_main.png',
+                        link: {
+                            mobileWebUrl: this.share_url,
+                            webUrl:this.share_url
+                        },
                     },
-                    // buttons: [
-                    //     {
-                    //         title: 'Open',
-                    //         link: {
-                    //             mobileWebUrl : document.location.href,
-                    //             webUrl: document.location.href
-                    //         }
-                    //     }
-                    // ]
-                }
-            })
+                    buttons: [ 
+                        {
+                            title:'웹으로 보기',
+                            link: {
+                                mobileWebUrl: this.share_url,
+                                webUrl:this.share_url
+                            }
+                        },
+                    ],
+                    //카카오톡 미설치 시 카카오톡 설치 경로이동
+                    installTalk: true,
+                })
+            } else{
+                alert('다시 공유하기를 클릭해주세요')
+                location.reload()
+            }
         }
     }
 }
 </script>
 
 <style>
-    @import './result.css'
+    @import './result.css';
 </style>

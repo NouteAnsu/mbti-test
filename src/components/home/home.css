@@ -2,6 +2,20 @@
 .home{
     height: 100%;
     font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.home::before{
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('./home_main.jpg');
+    background-size: cover;
+    opacity: 0.2;
 }
 .home_layout{
     height: 100%;
@@ -9,23 +23,29 @@
 .home_flex{
     text-align: center;
 }
-
-.mbti_question{
+.order{
+    text-align: left;
     font-size: 30px;
+    font-weight: 500;
+}
+.mbti_question{
+    font-size: 25px;
+    text-align: left;
 }
 .mbti_answer{
     font-size:25px;
-    background: #1AAB8A;
+    background: #ff385c;
     color: #fff;
     border: none;
     position: relative;
     cursor: pointer;
     transition: 800ms ease all;
     outline: none;
+    border-radius: 10px;
 }
 .mbti_answer:hover{
     background: #fff;
-    color: #1AAB8A;
+    color: #ff385c;
 }
 .mbti_answer::before,.mbti_answer::after{
     content: '';
@@ -34,7 +54,7 @@
     right: 0;
     height: 2px;
     width: 0;
-    background: #1AAB8A;
+    background: #ff385c;
     transition: 400ms ease all;
 }
 .mbti_answer::after{
@@ -47,6 +67,7 @@
     width: 100%;
     transition: 800ms ease all;
 }
+
 
 @media(max-width:960px){
     .mbti_answer{
@@ -63,6 +84,6 @@
         font-size: 16px;
     }
     .mbti_question{
-        font-size: 25px;
+        font-size: 20px;
     }
 }
