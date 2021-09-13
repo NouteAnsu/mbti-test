@@ -3,15 +3,18 @@
         <v-layout justify-center align-center class="result_layout">
             <v-flex xs11 sm8 md5 lg4 class="result_flex mx-8">
                 <v-flex class="mb-10" style="text-align:center">
-                    <img class="mt-5 hidden-sm-and-down" src="../splash/splash_icon.png" width="300" height="80">
+                    <img class="mt-5 hidden-sm-and-down" src="../splash/splash_icon.png" width="300" height="75a">
                     <img class="mt-5 hidden-md-and-up" src="../splash/splash_icon.png" width="170" height="40">
                 </v-flex>
                 <v-flex class="mb-15">
-                    <!-- <v-flex class="mbti_type mb-10">
-                        <v-flex style="max-height:400px">
-                            <img src="" width="100%" height="100%">
-                        </v-flex>
-                    </v-flex> -->
+                    <v-flex class="mbti_type mb-10">
+                        <v-flex class="mb-10 hidden-sm-and-down" style="height:450px">
+                        <img :src="resultTrip" width="100%" height="100%">
+                    </v-flex>
+                    <v-flex class="mb-10 hidden-md-and-up" style="height:350px">
+                        <img :src="resultTrip" width="100%" height="100%">
+                    </v-flex>
+                    </v-flex>
                     <v-flex class="mbti_type">{{type}}</v-flex>
                     <v-flex class="my-5" style="text-align:left">
                         <v-flex class="mbti_content2 mb-2" v-for="(text,index) in content" :key="index">{{text}}</v-flex>
@@ -52,6 +55,7 @@ export default {
             type:'',
             content:[],
             resultImg:'',
+            resultTrip:'',
 
             best:'',
             worst:'',
@@ -73,6 +77,7 @@ export default {
             this.type=data.type
             this.content=data.content.split(',')
             this.resultImg=data.resultImg
+            this.resultTrip=data.resultTrip
             this.best=data.best
             this.worst=data.worst
         },
@@ -84,7 +89,7 @@ export default {
                     content: {
                         title: 'MBTI유형 검사',
                         description: 'MBTI 유형 검사',
-                        imageUrl:'https://www.webudding.net/intro_main.png',
+                        imageUrl:'https://www.webudding.net/image.png',
                         link: {
                             mobileWebUrl: this.share_url,
                             webUrl:this.share_url
@@ -92,7 +97,7 @@ export default {
                     },
                     buttons: [ 
                         {
-                            title:'웹으로 보기',
+                            title:'테스트 하기',
                             link: {
                                 mobileWebUrl: this.share_url,
                                 webUrl:this.share_url

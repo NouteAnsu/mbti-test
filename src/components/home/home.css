@@ -26,11 +26,12 @@
 .order{
     text-align: left;
     font-size: 30px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .mbti_question{
-    font-size: 25px;
+    font-size: 27px;
     text-align: left;
+    font-weight: 600;
 }
 .mbti_answer{
     font-size:25px;
