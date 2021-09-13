@@ -2,7 +2,7 @@
     <v-container fluid class="intro" style="padding:0">
         <v-layout justify-center class="intro_layout">
             <v-flex xs12 sm10 md8 lg6  class="intro_flex" v-bind:class="{fade:show===true}">
-                <v-flex class="my-10 mx-3" style="height:65%">
+                <v-flex class="mb-10 mt-5 mx-3" style="height:65%">
                     <img src="./intro_main.png" width="100%" height="100%">
                 </v-flex>
                 <v-flex class="mt-15">
