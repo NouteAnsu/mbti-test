@@ -33,7 +33,7 @@
                         <img :src="resultImg" width="100%" height="100%">
                     </v-flex>
                     <v-flex class="mb-10">
-                        <v-flex class="mb-3 py-3" style="background:#ff385c;font-weight:bold;font-size:18px;cursor:pointer;color:#fff">지금 만나러 가기</v-flex>
+                        <v-flex class="mb-3 py-3" style="background:#ff385c;font-weight:bold;font-size:18px;cursor:pointer;color:#fff" @click="redirectUrl">지금 만나러 가기</v-flex>
                         <v-flex class="py-3" style="background:#fef01b;font-weight:bold;font-size:18px;cursor:pointer" @click="sendKaKao">카카오톡 공유하기</v-flex>
                     </v-flex>
                 </v-flex>
@@ -56,6 +56,7 @@ export default {
             content:[],
             resultImg:'',
             resultTrip:'',
+            resultUrl:'',
 
             best:'',
             worst:'',
@@ -80,6 +81,7 @@ export default {
             this.resultTrip=data.resultTrip
             this.best=data.best
             this.worst=data.worst
+            this.resultUrl=data.resultUrl
         },
         sendKaKao: function (){
             if (!Kakao.isInitialized()) {
@@ -111,6 +113,9 @@ export default {
                 alert('다시 공유하기를 클릭해주세요')
                 location.reload()
             }
+        },
+        redirectUrl(){
+            window.open(this.resultUrl)
         }
     }
 }

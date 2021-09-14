@@ -5,7 +5,8 @@ export default [
         resultImg:require('../assets/images/ISTJ.png'),
         resultTrip:require('../assets/images/trip/ISTJ.png'),
         best:'ESTP | 찐 핵인싸',
-        worst:'ENFP | 무계획 스파크'
+        worst:'ENFP | 무계획 스파크',
+        resultUrl:''
     },
     {
         type:'ISFJ',
@@ -13,7 +14,8 @@ export default [
         resultImg:require('../assets/images/ISFJ.png'),
         resultTrip:require('../assets/images/trip/ISFJ.png'),
         best:'ESFP | 새로운건 늘 짜릿해',
-        worst:'ENTP | 인간 에너자이저'
+        worst:'ENTP | 인간 에너자이저',
+        resultUrl:''
     },
     {
         type:'ISTP',
@@ -21,7 +23,8 @@ export default [
         resultImg:require('../assets/images/ISTP.png'),
         resultTrip:require('../assets/images/trip/ISTP.png'),
         best:'ESTJ | 이 구역 불도저',
-        worst:'ENFJ | 모두가 내 친구'
+        worst:'ENFJ | 모두가 내 친구',
+        resultUrl:''
     },
     {
         type:'ISFP',
@@ -29,7 +32,8 @@ export default [
         resultImg:require('../assets/images/ISFP.png'),
         resultTrip:require('../assets/images/trip/ISFP.png'),
         best:'ESFJ | 사교적인 외교관',
-        worst:'ENTJ | 타고난 리더십'
+        worst:'ENTJ | 타고난 리더십',
+        resultUrl:''
     },
     {
         type:'INTJ',
@@ -37,7 +41,8 @@ export default [
         resultImg:require('../assets/images/INTJ.png'),
         resultTrip:require('../assets/images/trip/INTJ.png'),
         best:'ENTP | 인간 에너자이저',
-        worst:'ESFP | 새로운게 제일 좋아'
+        worst:'ESFP | 새로운게 제일 좋아',
+        resultUrl:''
     },
     {
         type:'INFP',
@@ -45,7 +50,8 @@ export default [
         resultImg:require('../assets/images/INFP.png'),
         resultTrip:require('../assets/images/trip/INFP.png'),
         best:'ENFJ | 모두가 내 친구',
-        worst:'ESFJ | 사교적인 외교관'
+        worst:'ESFJ | 사교적인 외교관',
+        resultUrl:''
     },
     {
         type:'INTP',
@@ -53,7 +59,8 @@ export default [
         resultImg:require('../assets/images/INTP.png'),
         resultTrip:require('../assets/images/trip/INTP.png'),
         best:'ENTJ | 무계획 스파크',
-        worst:'ESFJ | 사교적인 외교관'
+        worst:'ESFJ | 사교적인 외교관',
+        resultUrl:''
     },
     {
         type:'INFJ',
@@ -61,7 +68,8 @@ export default [
         resultImg:require('../assets/images/INFJ.png'),
         resultTrip:require('../assets/images/trip/INFJ.png'),
         best:'ENTJ | 타고난 리더십',
-        worst:'ESTP | 찐 핵인싸'
+        worst:'ESTP | 찐 핵인싸',
+        resultUrl:''
     },
     {
         type:'ESTJ',
@@ -69,7 +77,8 @@ export default [
         resultImg:require('../assets/images/ESTJ.png'),
         resultTrip:require('../assets/images/trip/ESTJ.png'),
         best:'ISTP | 고독한 여행자',
-        worst:'INFP | 내 로망을 이뤄줘'
+        worst:'INFP | 내 로망을 이뤄줘',
+        resultUrl:'https://www.webudding.com/'
     },
     {
         type:'ESFJ',
@@ -77,7 +86,8 @@ export default [
         resultImg:require('../assets/images/ESFJ.png'),
         resultTrip:require('../assets/images/trip/ESFJ.png'),
         best:'ISFP | 힐링이 필요해',
-        worst:'INTP | 목마른 여행자'
+        worst:'INTP | 목마른 여행자',
+        resultUrl:''
     },
     {
         type:'ESTP',
@@ -85,7 +95,8 @@ export default [
         resultImg:require('../assets/images/ESTP.png'),
         resultTrip:require('../assets/images/trip/ISTJ.png'),
         best:'ISTJ | 프로 계획러',
-        worst:'INFJ | 힐링 캠프'
+        worst:'INFJ | 힐링 캠프',
+        resultUrl:''
     },
     {
         type:'ESFP',
@@ -93,7 +104,8 @@ export default [
         resultImg:require('../assets/images/ESFP.png'),
         resultTrip:require('../assets/images/trip/ESFP.png'),
         best:'ISFJ | 평화주의자',
-        worst:'INTJ | 여행 분석가'
+        worst:'INTJ | 여행 분석가',
+        resultUrl:''
     },
     {
         type:'ENTJ',
@@ -101,7 +113,8 @@ export default [
         resultImg:require('../assets/images/ENTJ.png'),
         resultTrip:require('../assets/images/trip/ENTJ.png'),
         best:'INTP | 목마른 여행자',
-        worst:'ISFP | 유유자적 휘파람'
+        worst:'ISFP | 유유자적 휘파람',
+        resultUrl:''
     },
     {
         type:'ENFP',
@@ -109,7 +122,8 @@ export default [
         resultImg:require('../assets/images/ENFP.png'),
         resultTrip:require('../assets/images/trip/ENFP.png'),
         best:'INFJ | 힐링 캠프',
-        worst:'ISTJ | 프로 계획러'
+        worst:'ISTJ | 프로 계획러',
+        resultUrl:''
     },
     {
         type:'ENTP',
@@ -117,7 +131,8 @@ export default [
         resultImg:require('../assets/images/ENTP.png'),
         resultTrip:require('../assets/images/trip/ENTP.png'),
         best:'INTJ | 여행 분석가',
-        worst:'ISFJ | 평화주의자'
+        worst:'ISFJ | 평화주의자',
+        resultUrl:''
     },
     {
         type:'ENFJ',
@@ -125,6 +140,7 @@ export default [
         resultImg:require('../assets/images/ENFJ.png'),
         resultTrip:require('../assets/images/trip/ENFJ.png'),
         best:'INFP | 자유로운 낭만가',
-        worst:'ISTP | 고독한 여행자'
+        worst:'ISTP | 고독한 여행자',
+        resultUrl:''
     },
 ]
