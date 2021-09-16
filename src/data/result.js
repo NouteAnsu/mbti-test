@@ -7,7 +7,7 @@ export default [
         resultTrip:require('../assets/images/trip/ISTJ.png'),
         best:'ESTP | 찐 핵인싸',
         worst:'ENFP | 무계획 스파크',
-        resultUrl:'https://www.webudding.com/ISTJ'
+        resultUrl:'https://www.webudding.com/ISTJ?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=istj'
     },
     {
         type:'ISFJ',
@@ -17,7 +17,7 @@ export default [
         resultTrip:require('../assets/images/trip/ISFJ.png'),
         best:'ESFP | 새로운건 늘 짜릿해',
         worst:'ENTP | 인간 에너자이저',
-        resultUrl:'https://www.webudding.com/ISFJ'
+        resultUrl:'https://www.webudding.com/ISFJ?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=isfj'
     },
     {
         type:'ISTP',
@@ -27,7 +27,7 @@ export default [
         resultTrip:require('../assets/images/trip/ISTP.png'),
         best:'ESTJ | 이 구역 불도저',
         worst:'ENFJ | 모두가 내 친구',
-        resultUrl:'https://www.webudding.com/ISTP'
+        resultUrl:'https://www.webudding.com/ISTP?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=istp'
     },
     {
         type:'ISFP',
@@ -37,7 +37,7 @@ export default [
         resultTrip:require('../assets/images/trip/ISFP.png'),
         best:'ESFJ | 사교적인 외교관',
         worst:'ENTJ | 타고난 리더십',
-        resultUrl:'https://www.webudding.com/ISFP'
+        resultUrl:'https://www.webudding.com/ISFP?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=isfp'
     },
     {
         type:'INTJ',
@@ -47,7 +47,7 @@ export default [
         resultTrip:require('../assets/images/trip/INTJ.png'),
         best:'ENTP | 인간 에너자이저',
         worst:'ESFP | 새로운게 제일 좋아',
-        resultUrl:'https://www.webudding.com/INTJ'
+        resultUrl:'https://www.webudding.com/INTJ?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=intj'
     },
     {
         type:'INFP',
@@ -57,7 +57,7 @@ export default [
         resultTrip:require('../assets/images/trip/INFP.png'),
         best:'ENFJ | 모두가 내 친구',
         worst:'ESFJ | 사교적인 외교관',
-        resultUrl:'https://www.webudding.com/INFP'
+        resultUrl:'https://www.webudding.com/INFP?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=infp'
     },
     {
         type:'INTP',
@@ -67,7 +67,7 @@ export default [
         resultTrip:require('../assets/images/trip/INTP.png'),
         best:'ENTJ | 무계획 스파크',
         worst:'ESFJ | 사교적인 외교관',
-        resultUrl:'https://www.webudding.com/INTP'
+        resultUrl:'https://www.webudding.com/INTP?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=intp'
     },
     {
         type:'INFJ',
@@ -77,7 +77,7 @@ export default [
         resultTrip:require('../assets/images/trip/INFJ.png'),
         best:'ENTJ | 타고난 리더십',
         worst:'ESTP | 찐 핵인싸',
-        resultUrl:'https://www.webudding.com/INFJ'
+        resultUrl:'https://www.webudding.com/INFJ?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=infj'
     },
     {
         type:'ESTJ',
@@ -87,7 +87,7 @@ export default [
         resultTrip:require('../assets/images/trip/ESTJ.png'),
         best:'ISTP | 고독한 여행자',
         worst:'INFP | 내 로망을 이뤄줘',
-        resultUrl:'https://www.webudding.com/ESTJ'
+        resultUrl:'https://www.webudding.com/ESTJ?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=estj'
     },
     {
         type:'ESFJ',
@@ -97,7 +97,7 @@ export default [
         resultTrip:require('../assets/images/trip/ESFJ.png'),
         best:'ISFP | 힐링이 필요해',
         worst:'INTP | 목마른 여행자',
-        resultUrl:'https://www.webudding.com/ESFJ'
+        resultUrl:'https://www.webudding.com/ESFJ?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=esfj'
     },
     {
         type:'ESTP',
@@ -107,7 +107,7 @@ export default [
         resultTrip:require('../assets/images/trip/ISTJ.png'),
         best:'ISTJ | 프로 계획러',
         worst:'INFJ | 힐링 캠프',
-        resultUrl:'https://www.webudding.com/ESTP'
+        resultUrl:'https://www.webudding.com/ESTP?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=estp'
     },
     {
         type:'ESFP',
@@ -117,7 +117,7 @@ export default [
         resultTrip:require('../assets/images/trip/ESFP.png'),
         best:'ISFJ | 평화주의자',
         worst:'INTJ | 여행 분석가',
-        resultUrl:'https://www.webudding.com/ESFP'
+        resultUrl:'https://www.webudding.com/ESFP?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=esfp'
     },
     {
         type:'ENTJ',
@@ -127,7 +127,7 @@ export default [
         resultTrip:require('../assets/images/trip/ENTJ.png'),
         best:'INTP | 목마른 여행자',
         worst:'ISFP | 유유자적 휘파람',
-        resultUrl:'https://www.webudding.com/ENTJ'
+        resultUrl:'https://www.webudding.com/ENTJ?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=entj'
     },
     {
         type:'ENFP',
@@ -137,7 +137,7 @@ export default [
         resultTrip:require('../assets/images/trip/ENFP.png'),
         best:'INFJ | 힐링 캠프',
         worst:'ISTJ | 프로 계획러',
-        resultUrl:'https://www.webudding.com/ENFP'
+        resultUrl:'https://www.webudding.com/ENFP?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=enfp'
     },
     {
         type:'ENTP',
@@ -147,7 +147,7 @@ export default [
         resultTrip:require('../assets/images/trip/ENTP.png'),
         best:'INTJ | 여행 분석가',
         worst:'ISFJ | 평화주의자',
-        resultUrl:'https://www.webudding.com/ENTP'
+        resultUrl:'https://www.webudding.com/ENTP?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=entp'
     },
     {
         type:'ENFJ',
@@ -157,6 +157,6 @@ export default [
         resultTrip:require('../assets/images/trip/ENFJ.png'),
         best:'INFP | 자유로운 낭만가',
         worst:'ISTP | 고독한 여행자',
-        resultUrl:'https://www.webudding.com/ENFJ'
+        resultUrl:'https://www.webudding.com/ENFJ?utm_source=social&utm_medium=MBTIdirectlink&utm_campaign=mbti&utm_content=enfj'
     },
 ]
