@@ -30,15 +30,11 @@
 
 <script>
 export default {
-    data() {
-        return {
-            text:'. . .'
-        }
-    },
     created() {
-        setInterval(() =>{
+        //setInterval을쓰면 3초 간격으로 무한 함수 실행 그래서 setTimeout을 사용해야함
+        setTimeout(() =>{
             this.$router.push({
-                path:'/result'
+                name:'Result'
             })
         },3000)
     },

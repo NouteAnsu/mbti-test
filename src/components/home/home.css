@@ -15,7 +15,7 @@
     bottom: 0;
     background: url('./home_main.jpg');
     background-size: cover;
-    opacity: 0.2;
+    opacity: 0.12;
 }
 .home_layout{
     height: 100%;
@@ -26,12 +26,12 @@
 .order{
     text-align: left;
     font-size: 30px;
-    font-weight: 600;
+    font-weight: bold;
 }
 .mbti_question{
     font-size: 27px;
     text-align: left;
-    font-weight: 600;
+    font-weight: bold;
 }
 .mbti_answer{
     font-size:25px;
