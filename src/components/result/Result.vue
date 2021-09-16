@@ -41,8 +41,13 @@
                         <img :src="resultImg" width="100%" height="100%">
                     </v-flex>
                     <v-flex class="mb-10">
-                        <v-flex class="mb-3 py-3" style="background:#ff385c;font-weight:bold;font-size:18px;cursor:pointer;color:#fff" @click="redirectUrl">지금 만나러 가기</v-flex>
-                        <v-flex class="py-3" style="background:#fef01b;font-weight:bold;font-size:18px;cursor:pointer" @click="sendKaKao">카카오톡 공유하기</v-flex>
+                        <v-flex class="mb-3 py-3" style="background:#ff385c;font-weight:bold;font-size:16px;cursor:pointer;color:#fff;height:73px" @click="redirectUrl">
+                            <v-flex style="letter-spacing:1px">나에게 맞는 속지 만나러 가기</v-flex>
+                            <v-flex style="font-weight:500">이 곳에 시크릿 쿠폰이 숨어있어요!</v-flex>
+                        </v-flex>
+                        <v-flex class="py-5" style="background:#fef01b;font-weight:bold;font-size:16px;cursor:pointer;height:73px;letter-spacing:1px" @click="sendKaKao">
+                            <v-layout align-center justify-center style="height:100%">카카오톡 공유하기</v-layout>
+                        </v-flex>
                     </v-flex>
                 </v-flex>
             </v-flex>
